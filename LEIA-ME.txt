@@ -1,0 +1,14 @@
+SITE DR CLOVIS CONDICELLI
+
+COMO PUBLICAR
+1) Extraia o ZIP (botao direito > Extrair tudo) e abra a pasta: index.html deve aparecer ao lado das pastas assets, blog, sobre, psicanalise, servicos, temas, ansiedade, angustia, luto, trauma, hipnose-e-hipnoterapia, terapia-de-casais, psicanalise-online, primeira-conversa e politica-de-privacidade.
+2) GitHub: apague do repositorio as pastas antigas (ansiedade-sao-carlos, angustia-sao-carlos, luto-sao-carlos, hipnose-clinica-sao-carlos) ou crie um repositorio novo. Depois use "Add file > Upload files", selecione TUDO (Ctrl+A) e ARRASTE para a area tracejada (as pastas vao junto). Nao envie o .zip. Confirme em "Commit changes".
+3) Vercel: Add New > Project > Import do repositorio, Framework Preset "Other", sem build command. Deploy.
+4) Dominio: Settings > Domains. O vercel.json redireciona o www, redireciona as URLs antigas e bloqueia a indexacao do endereco .vercel.app.
+5) Depois: enviar o sitemap.xml no Google Search Console.
+
+PENDENCIAS
+- Codigo do Bing Webmaster Tools (meta msvalidate.01).
+- Fotos novas para os artigos "Trauma psicologico" e "Comunicacao no casal" (hoje reutilizam imagens existentes).
+- Revisar e reescrever os textos com a sua voz clinica.
+- Revisao juridica da Politica de Privacidade.

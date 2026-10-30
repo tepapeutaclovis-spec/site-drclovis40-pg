@@ -1,0 +1,79 @@
+{
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/:path(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.drcloviscondicelli.com.br"
+        }
+      ],
+      "destination": "https://drcloviscondicelli.com.br/:path",
+      "permanent": true
+    },
+    {
+      "source": "/ansiedade-sao-carlos/",
+      "destination": "/ansiedade/",
+      "permanent": true
+    },
+    {
+      "source": "/angustia-sao-carlos/",
+      "destination": "/angustia/",
+      "permanent": true
+    },
+    {
+      "source": "/luto-sao-carlos/",
+      "destination": "/luto/",
+      "permanent": true
+    },
+    {
+      "source": "/hipnose-clinica-sao-carlos/",
+      "destination": "/hipnose-e-hipnoterapia/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": ".*\\.vercel\\.app"
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ]
+}
