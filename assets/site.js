@@ -1,4 +1,4 @@
-(function(){var K='cc-consent',ID='G-RYX1XFFBGC',b=document.getElementById('cookie'),v=null;
+(function(){var K='cc-consent',ID='G-RPFVWD4KLW',b=document.getElementById('cookie'),v=null;
 try{v=localStorage.getItem(K)}catch(e){}
 function load(){if(window.__ga)return;window.__ga=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id='+ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',ID,{anonymize_ip:true})}
 function set(x){try{localStorage.setItem(K,x)}catch(e){}if(b)b.hidden=true;if(x==='granted')load()}
